@@ -123,16 +123,6 @@
     .gallery-item:hover{border-color:var(--accent);transform:scale(1.01)}
     .gallery-item img{width:100%;height:100%;object-fit:cover}
 
-    /* STATS */
-    #stats{background:var(--sidebar-bg)}
-    #stats .section-tag{color:#607080}
-    #stats .section-header h2{color:#fff}
-    #stats .divider{background:var(--accent)}
-    .stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:2rem;text-align:center}
-    .stat-item{padding:.75rem}
-    .stat-number{font-family:var(--font-serif);font-size:2.6rem;font-weight:700;color:#fff;line-height:1;margin-bottom:.35rem}
-    .stat-label{font-size:.75rem;color:#607080;text-transform:uppercase;letter-spacing:.1em;font-weight:600}
-
     /* CONTACT */
     .contact-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:4rem;align-items:start}
     .contact-info h3{font-size:1rem;font-style:italic;margin-bottom:.6rem}
@@ -172,7 +162,7 @@
 
 <aside id="sidebar">
   <div class="sidebar-top">
-    <div class="sidebar-name">Your Name</div> <!-- ✏️ -->
+    <div class="sidebar-name">Aiden Koenig-Russell</div> <!-- ✏️ -->
     <div class="sidebar-title">Mechanical Engineer</div> <!-- ✏️ -->
   </div>
   <nav>
@@ -182,7 +172,6 @@
       <li><a href="#resume">Resume</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#stats">Stats</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -201,20 +190,21 @@
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <!-- ✏️ Your name — <em> glows amber to match the sunset -->
-      <h1>Your <em>Name</em></h1>
+      <h1>Aiden <em>Koenig-Russell</em></h1>
       <!-- ✏️ Tagline -->
-      <p class="hero-tagline">Mechanical Engineer · Software Developer · Energy Enthusiast</p>
+      <p class="hero-tagline">Mechanical Engineer · Software Developer · Renewables Research</p>
       <!-- ✏️ Tags -->
       <div class="hero-tags">
+        <span class="hero-tag">AI</span>
         <span class="hero-tag">C++</span>
         <span class="hero-tag">Java</span>
-        <span class="hero-tag">C#</span>
-        <span class="hero-tag">SolidWorks</span>
+        <span class="hero-tag">Solid-State Batteries</span>
+        <span class="hero-tag">Research</span>
         <span class="hero-tag">MATLAB</span>
-        <span class="hero-tag">Renewable Energy</span>
+        <span class="hero-tag">CAD</span>
       </div>
       <div class="hero-btns">
-        <a href="resume.pdf" class="btn btn-primary">↓ Download CV</a>
+        <a href="resume.pdf" target="_blank" class="btn btn-primary">↓ Download CV</a>
         <a href="#about" class="btn btn-ghost">Learn More</a>
       </div>
     </div>
@@ -228,36 +218,36 @@
   <section id="about">
     <div class="section-header fade-in">
       <span class="section-tag">About</span>
-      <h2>Let me introduce <em>myself.</em></h2>
+      <h2>Who am <em>I.</em></h2>
       <div class="divider"></div>
     </div>
     <div class="about-grid">
       <div class="fade-in">
         <!-- ✏️ Bio paragraphs -->
-        <p>I'm a Mechanical Engineering student at [Your University] with minors in Computer Science and Energy Studies. My work lives at the intersection of physical systems design and intelligent software.</p>
-        <p>From designing heat exchangers to writing simulation tools in C++, I bring an interdisciplinary lens to engineering challenges. I'm particularly drawn to clean energy systems, autonomous mechanisms, and computational modeling.</p>
-        <p>Outside the lab you'll find me [your hobbies — hiking, 3D printing, reading about grid storage, etc.].</p>
+        <p>I love to make cool stuff. Currently I'm studing Mechanical Engineering at San Diego State University with minors in Computer Science and Energy Studies. As an assistant researcher at Dr. Kong's Electrochemical Energy Lab I'm helping to develop advanced solid-state electrolytes for industrial applications.</p>
+        <p>Growing up I would take apart and put back together anything I could find and eventually that spiraled into me making my own projects from scratch weather it be 3D printed, woodworking, coded or anything else I love make a project that I can look back on and say that I built it from the ground up. My passion lended it's self to Robotics in my youth and now that passion has turned me towards the direction of renewables engineering.</p>
+        <p>Outside school and the lab I work part time teaching elementary students STEM topics via Kodely.</p>
         <div class="profile-info">
           <h4>Profile</h4>
           <!-- ✏️ Profile fields -->
           <ul class="info-list">
-            <li><span class="info-label">Name:</span><span class="info-value">Your Full Name</span></li>
-            <li><span class="info-label">School:</span><span class="info-value">[Your University]</span></li>
+            <li><span class="info-label">Name:</span><span class="info-value">Aiden William Koenig-Russell</span></li>
+            <li><span class="info-label">School:</span><span class="info-value">San Diego State University</span></li>
             <li><span class="info-label">Major:</span><span class="info-value">Mechanical Engineering</span></li>
             <li><span class="info-label">Minors:</span><span class="info-value">CS, Energy Studies</span></li>
-            <li><span class="info-label">Email:</span><span class="info-value"><a href="mailto:you@email.com">you@email.com</a></span></li>
+            <li><span class="info-label">Email:</span><span class="info-value"><a href="mailto:you@email.com">akoenigrussell8815@sdsu.edu</a></span></li>
             <li><span class="info-label">Status:</span><span class="info-value">Open to internships</span></li>
           </ul>
         </div>
         <div style="margin-top:1.5rem;display:flex;gap:.75rem;flex-wrap:wrap">
           <a href="#contact" class="btn btn-primary" style="font-size:.84rem;padding:.55rem 1.2rem">Hire Me</a>
-          <a href="resume.pdf" style="font-size:.84rem;padding:.55rem 1.2rem;border:1.5px solid var(--accent);color:var(--accent);border-radius:4px;font-weight:600;display:inline-flex;align-items:center">Download CV</a>
+          <a href="resume.pdf" target="_blank" style="font-size:.84rem;padding:.55rem 1.2rem;border:1.5px solid var(--accent);color:var(--accent);border-radius:4px;font-weight:600;display:inline-flex;align-items:center">Download CV</a>
         </div>
       </div>
       <div class="fade-in">
         <!-- ✏️ Replace with: <img src="images/you.jpg" alt="Your Name"> inside .about-photo -->
         <div class="about-photo" style="margin-bottom:2rem">
-          Add your photo<br><span style="font-size:.68rem;opacity:.6;margin-top:.3rem;display:block">images/you.jpg</span>
+          <br><span style="font-size:.68rem;opacity:.6;margin-top:.3rem;display:block">you.jpg</span>
         </div>
         <div class="skills-wrap">
           <h4>Technical Skills</h4>
@@ -286,13 +276,13 @@
         <ul class="timeline">
           <!-- ✏️ Edit education -->
           <li class="timeline-item">
-            <div class="timeline-date">2022 – 2026</div>
+            <div class="timeline-date">2024 – 2028</div>
             <div class="timeline-title">B.S. Mechanical Engineering</div>
-            <div class="timeline-place">[Your University]</div>
-            <div class="timeline-desc">Minors in CS and Energy Studies. GPA: X.XX. Coursework: Thermodynamics, Fluid Mechanics, FEA, Data Structures, Numerical Methods.</div>
+            <div class="timeline-place">SDSU</div>
+            <div class="timeline-desc">Minors in CS and Energy Studies. GPA: 3.14. Coursework: Thermodynamics, Methods of Analysis, Data Structures.</div>
           </li>
           <li class="timeline-item">
-            <div class="timeline-date">2018 – 2022</div>
+            <div class="timeline-date">2020 – 2024</div>
             <div class="timeline-title">High School Diploma</div>
             <div class="timeline-place">[Your High School]</div>
             <div class="timeline-desc">Graduated with honors. [Notable awards or achievements].</div>
@@ -304,22 +294,22 @@
         <ul class="timeline">
           <!-- ✏️ Edit / duplicate entries -->
           <li class="timeline-item">
-            <div class="timeline-date">Summer 2024</div>
-            <div class="timeline-title">Engineering Intern</div>
-            <div class="timeline-place">[Company Name]</div>
-            <div class="timeline-desc">What you did, tools used, and impact. 2–3 sentences is ideal.</div>
-          </li>
-          <li class="timeline-item">
-            <div class="timeline-date">2023 – Present</div>
+            <div class="timeline-date">2026 – Present</div>
             <div class="timeline-title">Undergraduate Researcher</div>
-            <div class="timeline-place">[Lab / Dept, Your University]</div>
-            <div class="timeline-desc">Research focus and contributions. Mention publications, presentations, or prototypes.</div>
+            <div class="timeline-place">Electrochemical Energy Lab</div>
+            <div class="timeline-desc">Developent of solid-state electrolyte batteries for industrial scale. Trained in general lab saftey & glove box use.</div>
           </li>
           <li class="timeline-item">
-            <div class="timeline-date">2022 – Present</div>
-            <div class="timeline-title">[Club / Organization Role]</div>
-            <div class="timeline-place">[Club Name]</div>
-            <div class="timeline-desc">Leadership, competitions, or technical projects.</div>
+            <div class="timeline-date">2024 – Present</div>
+            <div class="timeline-title">Extended Day Instructor</div>
+            <div class="timeline-place">Kodely</div>
+            <div class="timeline-desc">Solo lead groups of ~20 students through STEM courses for a couple house each week.</div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-date">2024</div>
+            <div class="timeline-title">National Youth Leadership Training Staff</div>
+            <div class="timeline-place">Scouting America</div>
+            <div class="timeline-desc">Planned 45 meals for 90 people and trained a team of 5 to effectivly produce those meals in the span of a week and a half.</div>
           </li>
         </ul>
       </div>
@@ -339,8 +329,8 @@
         <div class="project-thumb">images/project1.jpg</div>
         <div class="project-body">
           <div class="project-cat">Energy Systems</div>
-          <h3>Solar Thermal Collector Optimization</h3>
-          <p>MATLAB simulation of a parabolic trough collector across three working fluids.</p>
+          <h3>S</h3>
+          <p>M</p>
           <div class="project-tags"><span class="ptag">MATLAB</span><span class="ptag">Thermodynamics</span></div>
           <div class="project-links"><a href="#">GitHub →</a><a href="#">Report →</a></div>
         </div>
@@ -431,25 +421,25 @@
         <div class="contact-info">
           <h3>Where to find me</h3>
           <address style="font-style:normal">
-            <p>[Your University]</p> <!-- ✏️ -->
-            <p>[City, State]</p>
+            <p>San Diego State University</p> <!-- ✏️ -->
+            <p>San Diego, CA</p>
           </address>
         </div>
         <div class="contact-divider"></div>
         <div class="contact-info">
           <h3>Email me at</h3>
-          <p><a href="mailto:you@email.com">you@email.com</a></p> <!-- ✏️ -->
+          <p><a href="mailto:you@email.com">akoenigrussell8815@sdsu.edu</a></p> <!-- ✏️ -->
         </div>
         <div class="contact-divider"></div>
         <div class="contact-info">
           <h3>Let's connect</h3>
-          <p><a href="https://linkedin.com/in/yourhandle">LinkedIn →</a></p> <!-- ✏️ -->
-          <p><a href="https://github.com/yourhandle">GitHub →</a></p>
+          <p><a href="https://linkedin.com/in/aiden-koenig-russell-50b218328/">LinkedIn →</a></p> <!-- ✏️ -->
+          <p><a href="https://github.com/akoenigrussell8815">GitHub →</a></p>
         </div>
       </div>
       <div class="fade-in">
         <!-- ✏️ Replace YOUR_FORM_ID with Formspree ID -->
-        <form class="cf" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <form input type="hidden" name="_next" value="https://akoenigrussell8815.github.io" class="cf" action="https://formspree.io/f/xgonjpqg" method="POST">
           <div class="field"><label>Name</label><input type="text" name="name" placeholder="Jane Smith" required></div>
           <div class="field"><label>Email</label><input type="email" name="email" placeholder="jane@example.com" required></div>
           <div class="field"><label>Subject</label><input type="text" name="subject" placeholder="Internship / Collaboration / etc."></div>
@@ -460,7 +450,7 @@
     </div>
   </section>
 
-  <footer>© 2025 Your Name — Mechanical Engineering · CS · Energy Studies</footer> <!-- ✏️ -->
+  <footer>© 2026 Aiden Koenig-Russell — Mechanical Engineering · CS · Energy Studies</footer> <!-- ✏️ -->
 
 </div>
 
